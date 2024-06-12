@@ -8,12 +8,14 @@ Some part of mcpack scanner script is made with the help of chatGPT because iam 
 
 2. Place `shadername.mcpack` file in `Downloads` folder 
 
-2. Open Termux and run this command `apt update -y && apt upgrade -y`
+3. Open Termux and run this command `apt update -y && apt upgrade -y` (only once)
 
-3. After that run this command
+4. After that run this command (only once)
 
-4. After using the above command once just use `bash materialdigger.sh` to start it
+5. Follow all instructions given on screen
 
-5. After running it you can find output file in `Downloads` folder of your device
+6. After using the above command once just use `bash materialdigger.sh` to start it everytime
+
+7. After running it you can find output file in `Downloads` folder of your device
 
 
