@@ -17,7 +17,7 @@ curl -o material.sh https://raw.githubusercontent.com/Sparklight77/MaterialDigge
 
 5. Follow all instructions given on screen
 
-6. After using the above command once just use `bash materialdigger.sh` to start it everytime
+6. After using the above command once just use `bash material.sh` to start it everytime
 
 7. After running it you can find output file in `Downloads` folder of your device
 
