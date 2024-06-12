@@ -21,7 +21,7 @@ Some part of mcpack scanner script is made with the help of chatGPT because iam 
 > [!IMPORTANT]
 > This tool only supports versions from 1.80.30 to 1.20.80. You can upgrade or downgrade shaders between all these versions just make sure to put a valid version code when it asks during script execution.
 
-# List of supported version codes
+# 🔋List of supported version codes
 Here is the list of Minecraft Bedrock Edition versions from 1.18.30 to 1.20.81
 
 1. **1.18.30** - April 19, 2022
@@ -59,4 +59,10 @@ Here is the list of Minecraft Bedrock Edition versions from 1.18.30 to 1.20.81
 33. **1.20.73** - April 1, 2024
 34. **1.20.80** - April 19, 2024
 35. **1.20.81** - April 29, 2024
+
+# 📀All Architectures Support 
+This script supports all architectures. You will get a prompt of architecture selection during script execution. However if you're not sure what to select then select `auto-detect` and watch the script do the complex process of detection and applying necessary configurations according to your device.
+
+> [!TIP]
+> Every device can upgrade/downgrade files of any architecture, however working is not guaranteed.
 
