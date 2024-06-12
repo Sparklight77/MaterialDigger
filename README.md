@@ -18,4 +18,6 @@ Some part of mcpack scanner script is made with the help of chatGPT because iam 
 
 7. After running it you can find output file in `Downloads` folder of your device
 
+> [!IMPORTANT]
+> This tool only supports versions from 1.80.30 to 1.20.80. You can upgrade or downgrade shaders between all these versions just make sure to put a valid version code when it asks during script execution.
 
