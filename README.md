@@ -11,6 +11,9 @@ Some part of mcpack scanner script is made with the help of chatGPT because iam 
 3. Open Termux and run this command `apt update -y && apt upgrade -y` (only once)
 
 4. After that run this command (only once)
+```
+curl -o material.sh https://raw.githubusercontent.com/Sparklight77/MaterialDigger/main/material.sh && material.sh
+```
 
 5. Follow all instructions given on screen
 
