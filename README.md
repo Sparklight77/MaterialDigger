@@ -71,3 +71,6 @@ This script supports all architectures. You will get a prompt of architecture se
 
 > [!NOTE]
 > If you encounter any problems, simply open an issue in [mcbegamerxx9541 script](https://github.com/mcbegamerxx954/material-updater/tree/v0.1.1) and tell them the problem and mention that you used this script 
+
+# 📝Note
+For further suggestions and improvements open an issue here or contact me on Discord `@sparklight77`. Iam always looking for improvements.
