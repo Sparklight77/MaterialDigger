@@ -1,5 +1,5 @@
 # 💫MaterialDigger overwiew 
-A bash script to automate upgrading/downgrading material renderdragon shaders of a popular sandbox game. This script is based on the brilliant work of [mcbegamerxx9541]() which is originally known as [Material-Updater](https://github.com/mcbegamerxx954/material-updater/tree/v0.1.1).
+A bash script to automate upgrading and downgrading material renderdragon shaders of a popular sandbox game. This script is based on the brilliant work of [mcbegamerxx9541](https://github.com/mcbegamerxx954) which is originally known as [Material-Updater](https://github.com/mcbegamerxx954/material-updater/tree/v0.1.1).
 
 Some part of mcpack scanner script is made with the help of chatGPT because iam not very experienced in bash script.
 
