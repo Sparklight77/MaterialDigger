@@ -61,7 +61,7 @@ Here is the list of Minecraft Bedrock Edition versions from 1.18.30 to 1.20.81
 32. **1.20.72** - March 29, 2024
 33. **1.20.73** - April 1, 2024
 34. **1.20.80** - April 19, 2024
-35. **1.20.81** - April 29, 2024
+35. **1.20.81** - April 29, 2024 (unsupported)
 
 # 📀All Architectures Support 
 This script supports all architectures. You will get a prompt of architecture selection during script execution. However if you're not sure what to select then select `auto-detect` and watch the script do the complex process of detection and applying necessary configurations according to your device.
