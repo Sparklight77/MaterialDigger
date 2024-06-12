@@ -66,3 +66,5 @@ This script supports all architectures. You will get a prompt of architecture se
 > [!TIP]
 > Every device can upgrade/downgrade files of any architecture, however working is not guaranteed.
 
+> [!NOTE]
+> If you encounter any problems, simply open an issue in [mcbegamerxx9541 script](https://github.com/mcbegamerxx954/material-updater/tree/v0.1.1) and tell them the problem and mention that you used this script 
