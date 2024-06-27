@@ -12,7 +12,7 @@ Some part of mcpack scanner script is made with the help of chatGPT because iam 
 
 4. After that run this command (only once)
 ```
-curl -o material.sh https://raw.githubusercontent.com/Sparklight77/MaterialDigger/main/material.sh && material.sh
+curl -o material.sh https://raw.githubusercontent.com/Sparklight77/MaterialDigger/main/material.sh && bash material.sh
 ```
 
 5. Follow all instructions given on screen
