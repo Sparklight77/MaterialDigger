@@ -35,17 +35,17 @@ auto_detect() {
     case "$detected_arch" in
         aarch64)
             arch="aarch64"
-            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.1/material-updater-aarch64-linux-android.tar.gz"
+            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-aarch64-linux-android.tar.gz"
             material_filename="material-updater-aarch64-linux-android.tar.gz"
             ;;
         armv7l)
             arch="armv7l"
-            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.1/material-updater-armv7-linux-androideabi.tar.gz"
+            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-armv7-linux-androideabi.tar.gz"
             material_filename="material-updater-armv7-linux-androideabi.tar.gz"
             ;;
         x86_64)
             arch="x86_64"
-            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.1/material-updater-x86_64-unknown-linux-gnu.tar.gz"
+            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-x86_64-unknown-linux-gnu.tar.gz"
             material_filename="material-updater-x86_64-unknown-linux-gnu.tar.gz"
             ;;
         *)
@@ -67,17 +67,17 @@ read -p "$(echo -e ${BOLD_RED}Enter the number corresponding to the desired arch
 case "$arch" in
     1)
         arch="aarch64"
-        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.1/material-updater-aarch64-linux-android.tar.gz"
+        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-aarch64-linux-android.tar.gz"
         material_filename="material-updater-aarch64-linux-android.tar.gz"
         ;;
     2)
         arch="armv7l"
-        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.1/material-updater-armv7-linux-androideabi.tar.gz"
+        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-armv7-linux-androideabi.tar.gz"
         material_filename="injector-armv7-linux-androideabi.tar.gz"
         ;;
     3)
         arch="x86_64"
-        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.1/material-updater-x86_64-unknown-linux-gnu.tar.gz"
+        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-x86_64-unknown-linux-gnu.tar.gz"
         material_filename="material-updater-x86_64-unknown-linux-gnu.tar.gz"
         ;;
     4)
