@@ -24,7 +24,7 @@ sleep 1
 # Check storage permissions
 storage_dir="storage"
 if [ -d "$storage_dir" ]; then
-    echo -e " ${CYAN} Storage permission already granted to Termux. Proceeding... ${RESET}\n"
+    echo -e " ${CYAN} Storage permission already granted. Proceeding... ${RESET}\n"
 else
     termux-setup-storage
 fi
@@ -35,17 +35,17 @@ auto_detect() {
     case "$detected_arch" in
         aarch64)
             arch="aarch64"
-            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-aarch64-linux-android.tar.gz"
+            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.4/material-updater-aarch64-linux-android.tar.gz"
             material_filename="material-updater-aarch64-linux-android.tar.gz"
             ;;
-        armv7l)
-            arch="armv7l"
-            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-armv7-linux-androideabi.tar.gz"
+        armv7)
+            arch="armv7"
+            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.4/material-updater-armv7-linux-androideabi.tar.gz"
             material_filename="material-updater-armv7-linux-androideabi.tar.gz"
             ;;
         x86_64)
             arch="x86_64"
-            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-x86_64-unknown-linux-gnu.tar.gz"
+            material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.4/material-updater-x86_64-unknown-linux-gnu.tar.gz"
             material_filename="material-updater-x86_64-unknown-linux-gnu.tar.gz"
             ;;
         *)
@@ -58,7 +58,7 @@ auto_detect() {
 # Prompt user to choose the architecture
 echo -e "${BOLD_BLUE}Please select the architecture:${RESET}"
 echo -e "${BOLD_BLUE}1) aarch64${RESET}"
-echo -e "${BOLD_BLUE}2) armv7l${RESET}"
+echo -e "${BOLD_BLUE}2) armv7${RESET}"
 echo -e "${BOLD_BLUE}3) x86_64 Linux${RESET}"
 echo -e "${BOLD_BLUE}4) Auto-detect${RESET}"
 read -p "$(echo -e ${BOLD_RED}Enter the number corresponding to the desired architecture:${RESET} ) " arch
@@ -67,17 +67,17 @@ read -p "$(echo -e ${BOLD_RED}Enter the number corresponding to the desired arch
 case "$arch" in
     1)
         arch="aarch64"
-        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-aarch64-linux-android.tar.gz"
+        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.4/material-updater-aarch64-linux-android.tar.gz"
         material_filename="material-updater-aarch64-linux-android.tar.gz"
         ;;
     2)
         arch="armv7l"
-        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-armv7-linux-androideabi.tar.gz"
+        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.4/material-updater-armv7-linux-androideabi.tar.gz"
         material_filename="injector-armv7-linux-androideabi.tar.gz"
         ;;
     3)
         arch="x86_64"
-        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.2/material-updater-x86_64-unknown-linux-gnu.tar.gz"
+        material_url="https://github.com/mcbegamerxx954/material-updater/releases/download/v0.1.4/material-updater-x86_64-unknown-linux-gnu.tar.gz"
         material_filename="material-updater-x86_64-unknown-linux-gnu.tar.gz"
         ;;
     4)
