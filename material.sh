@@ -58,12 +58,12 @@ auto_detect() {
 }
 
 # Prompt user to choose the architecture
-echo -e "${BOLD_BLUE}Please select the architecture:${RESET}"
-echo -e "${BOLD_BLUE} 1) aarch64 ${RESET}"
-echo -e "${BOLD_BLUE} 2) armv7 ${RESET}"
-echo -e "${BOLD_BLUE} 3) Linux x86_64 ${RESET}"
-echo -e "${BOLD_BLUE} 4) Auto-detect ${RESET}"
-read -p "$(echo -e ${BOLD_RED}Enter the number corresponding to the desired architecture:${RESET} ) " arch
+echo -e "${GREEN}Please select the architecture:${RESET}"
+echo -e "${GREEN} 1) aarch64 ${RESET}"
+echo -e "${GREEN} 2) armv7 ${RESET}"
+echo -e "${GREEN} 3) Linux x86_64 ${RESET}"
+echo -e "${GREEN} 4) Auto-detect ${RESET}"
+read -p "$(echo -e ${YELLOW}Enter the number corresponding to the desired architecture:${RESET} ) " arch
 
 # Set variables according to the user's selection
 case "$arch" in
