@@ -27,7 +27,7 @@ storage_dir="storage"
 if [ -d "$storage_dir" ]; then
     echo -e " ${GREEN} Storage permission already granted. Proceeding... ${RESET}\n"
 else
-    echo -e " ${YELLOW} Granting Storage...
+    echo -e " ${YELLOW} Granting Storage... ${RESET}"
     termux-setup-storage
 fi
 
