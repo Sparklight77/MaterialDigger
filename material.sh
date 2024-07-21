@@ -24,8 +24,9 @@ sleep 1
 # Check storage permissions
 storage_dir="storage"
 if [ -d "$storage_dir" ]; then
-    echo -e " ${CYAN} Storage permission already granted. Proceeding... ${RESET}\n"
+    echo -e " ${GREEN} Storage permission already granted. Proceeding... ${RESET}\n"
 else
+    echo -e " ${YELLOW} Granting Storage...
     termux-setup-storage
 fi
 
@@ -59,7 +60,7 @@ auto_detect() {
 echo -e "${BOLD_BLUE}Please select the architecture:${RESET}"
 echo -e "${BOLD_BLUE}1) aarch64${RESET}"
 echo -e "${BOLD_BLUE}2) armv7${RESET}"
-echo -e "${BOLD_BLUE}3) x86_64 Linux${RESET}"
+echo -e "${BOLD_BLUE}3) Linux x86_64${RESET}"
 echo -e "${BOLD_BLUE}4) Auto-detect${RESET}"
 read -p "$(echo -e ${BOLD_RED}Enter the number corresponding to the desired architecture:${RESET} ) " arch
 
@@ -89,7 +90,7 @@ case "$arch" in
         ;;
 esac
 
-# Define the Downloads directory
+# Define the directory
 DOWNLOADS_DIR="/storage/emulated/0/Download"
 
 # Find all .mcpack files in the Downloads directory and store them in an array
@@ -97,23 +98,23 @@ mapfile -t MCPACK_FILES < <(find "$DOWNLOADS_DIR" -type f -name "*.mcpack")
 
 # Check if any .mcpack files were found
 if [ ${#MCPACK_FILES[@]} -eq 0 ]; then
-  echo "No .mcpack files found in the Downloads directory."
+  echo -e " ${RED} No .mcpack files found in the Downloads directory. ${RESET}"
   exit 1
 fi
 
 # List the found .mcpack files
-echo "Found the following .mcpack files:"
+echo " ${CYAN} Found the following .mcpack files: ${RESET}"
 for i in "${!MCPACK_FILES[@]}"; do
   echo "$((i+1)). ${MCPACK_FILES[$i]}"
 done
 
 # Prompt the user to select a file by number
-echo -n "Select a file by number: "
+echo -n " ${BLUE} Select a file by number: ${RESET}"
 read -r FILE_NUMBER
 
 # Validate the input
 if ! [[ "$FILE_NUMBER" =~ ^[0-9]+$ ]] || [ "$FILE_NUMBER" -le 0 ] || [ "$FILE_NUMBER" -gt ${#MCPACK_FILES[@]} ]; then
-  echo "Invalid selection."
+  echo " ${RED} Invalid selection. ${RESET}"
   exit 1
 fi
 
@@ -134,7 +135,7 @@ read -p "Output File Name (include .mcpack extension): " output
 
 # Download the injector if not already present
 if [ -f "$injector_filename" ]; then
-    echo -e "${YELLOW} Injector already downloaded. Skipping download... ${RESET}"
+    echo -e "${YELLOW} Injector Found. Skipping download... ${RESET}"
 else
     echo -e "${YELLOW} Downloading the injector for '$arch'... ${RESET}"
     curl -L -o "$material_filename" "$material_url"
@@ -152,9 +153,10 @@ else
      exit 1
 fi
 
-
+# Define output directory
+O_DIR="/storage/emulated/0/material-bin
 # Create Download directory if it doesn't exist
-if [ ! -d "$DOWNLOADS_DIR" ]; then
+if [ ! -d "$O_DIR" ]; then
   mkdir -p "$DOWNLOADS_DIR"
   echo -e "${BOLD_YELLOW} 'Download' directory created successfully. Moving files...${RESET}"
   sleep 3
@@ -164,6 +166,6 @@ else
 fi
 
 # Move the output APK to the MCPatch directory
-mv "$output" "$DOWNLOADS_DIR"
+mv "$output" "$O_DIR"
 echo -e "${GREEN} Process completed successfully.${RESET}"
 exit 0
