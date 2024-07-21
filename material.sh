@@ -1,3 +1,4 @@
+#!/bin/bash
 # Define color variables
 RESET='\033[0m'
 BLACK='\033[0;30m'
