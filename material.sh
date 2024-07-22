@@ -158,8 +158,8 @@ fi
 O_DIR="/storage/emulated/0/material-bin
 # Create Download directory if it doesn't exist
 if [ ! -d "$O_DIR" ]; then
-  mkdir -p "$DOWNLOADS_DIR"
-  echo -e "${BOLD_YELLOW} 'Download' directory created successfully. Moving files...${RESET}"
+  mkdir -p "$O_DIR"
+  echo -e "${BOLD_YELLOW} 'materialbin' folder on home directory created successfully. Moving files...${RESET}"
   sleep 3
 else
   echo -e "${BOLD_YELLOW} Moving files...${RESET}"
