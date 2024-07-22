@@ -22,7 +22,7 @@ curl -o material.sh https://raw.githubusercontent.com/Sparklight77/MaterialDigge
 7. After running it you can find output file in `Downloads` folder of your device
 
 > [!IMPORTANT]
-> This tool only supports versions from 1.80.30 to 1.20.80. You can upgrade or downgrade shaders between all these versions just make sure to put a valid version code when it asks during script execution.
+> This tool only supports versions from 1.80.30 to latest. You can upgrade or downgrade shaders between all these versions just make sure to put a valid version code when it asks during script execution.
 
 # 🔋List of supported version codes
 Here is the list of Minecraft Bedrock Edition versions from 1.18.30 to 1.20.81
