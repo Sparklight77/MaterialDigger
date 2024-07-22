@@ -110,7 +110,7 @@ for i in "${!MCPACK_FILES[@]}"; do
 done
 
 # Prompt the user to select a file by number
-echo -n " ${BLUE} Select a file by number: ${RESET}"
+echo -n " Select a file by number: "
 read -r FILE_NUMBER
 
 # Validate the input
