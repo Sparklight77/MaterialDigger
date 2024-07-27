@@ -93,6 +93,7 @@ esac
 
 # Define the directory
 DOWNLOADS_DIR="/storage/emulated/0/Download"
+OUT_DIR="/storage/emulated/0/MaterialBin"
 
 # Find all .mcpack files in the Downloads directory and store them in an array
 mapfile -t MCPACK_FILES < <(find "$DOWNLOADS_DIR" -type f -name "*.mcpack")
@@ -131,7 +132,7 @@ mv "$PACK" "$HOME"
 
 # Prompt for additional details
 echo -e "{YELLOW} Provide the following details to initiate material updater: ${RESET}"
-read -p "Game Version (use correct code): " version
+read -p "shader Version (use correct code): " version
 read -p "Output File Name (include .mcpack extension): " output
 
 # Download the injector if not already present
@@ -154,19 +155,18 @@ else
      exit 1
 fi
 
-# Define output directory
-O_DIR="/storage/emulated/0/material-bin
-# Create Download directory if it doesn't exist
-if [ ! -d "$O_DIR" ]; then
-  mkdir -p "$O_DIR"
-  echo -e "${BOLD_YELLOW} 'materialbin' folder on home directory created successfully. Moving files...${RESET}"
+
+# Create output directory if it doesn't exist
+if [ ! -d "$OUT_DIR" ]; then
+  mkdir -p "$OUT_DIR"
+  echo -e "${BOLD_YELLOW} 'MaterialBin' folder on home directory created successfully. Moving files...${RESET}"
   sleep 3
 else
   echo -e "${BOLD_YELLOW} Moving files...${RESET}"
   sleep 3
 fi
 
-# Move the output APK to the MCPatch directory
-mv "$output" "$O_DIR"
+# Move the output file to the MaterialBin directory
+mv "$output" "$OUT_DIR"
 echo -e "${GREEN} Process completed successfully.${RESET}"
 exit 0
