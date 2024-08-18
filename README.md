@@ -28,8 +28,11 @@ curl -o material.sh https://raw.githubusercontent.com/Sparklight77/MaterialDigge
 Here is the list of supported version codes
 
 **v1-18-30**
+
 **v1-19-60**
+
 **v1-20-80**
+
 **v1-21-20**
 
 
