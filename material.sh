@@ -62,7 +62,7 @@ echo -e "${GREEN}Please select the architecture:${RESET}"
 echo -e "${GREEN} 1) aarch64 ${RESET}"
 echo -e "${GREEN} 2) armv7 ${RESET}"
 echo -e "${GREEN} 3) Linux x86_64 ${RESET}"
-echo -e "${GREEN} 4) Auto-detect ${RESET}"
+echo -e "${GREEN} 4) Auto-detect \(experimental\)  ${RESET}"
 read -p "$(echo -e ${YELLOW}Enter the number corresponding to the desired architecture:${RESET} ) " arch
 
 # Set variables according to the user's selection
